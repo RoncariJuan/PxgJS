@@ -6,17 +6,17 @@ export default function Carrosel(){
     const imagem = document.querySelector('[data-img]');
 
     bolinha1.addEventListener('click', () => {
-        imagem.setAttribute('src', 'img/pokemon/carrosel1.webp');
+        imagem.setAttribute('src', 'img/Fundos/carrosel1.png');
         span.textContent = 'São mais de 400 criaturas!'
     });
  
     bolinha2.addEventListener('click', () => {
-        imagem.setAttribute('src', 'img/pokemon/carrosel2.webp');
+        imagem.setAttribute('src', 'img/Fundos/carrosel2.png');
         span.textContent = 'Viaje com suas criaturas'
     });
 
     bolinha3.addEventListener('click', () => {
-        imagem.setAttribute('src', 'img/pokemon/carousel_img3.webp');
+        imagem.setAttribute('src', 'img/Fundos/carrosel3.png');
         span.textContent = 'Batalhe em tempo real'
     });
    

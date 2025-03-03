@@ -78,6 +78,8 @@ text-align: center;
     margin-top: 20px;
     cursor: pointer;
 }
+
+
 @media(max-width: 728px){
     .span{
         display: none;
@@ -97,7 +99,7 @@ text-align: center;
     .span{
         position: absolute;
         right: 0px;
-        top: 530px;
+        top: 400px;
         background: linear-gradient(#1DA4D9, #4898D2) padding-box,
                     linear-gradient(45deg, #1DA4D9, #4898D2) border-box;
         padding: 20px 40px;
@@ -106,6 +108,7 @@ text-align: center;
         border-radius: 10px 0px 0px 0px;
         font-size: 1.5rem;
     }
+
 }
 
 
