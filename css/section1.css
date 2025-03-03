@@ -1,0 +1,111 @@
+.container-sobre{
+   background: url(../img/Fundos/fundo\ 1.webp);
+   background-repeat: no-repeat;
+}
+
+h1{
+text-align: center;
+   font-size: 2rem;
+   color: var(--inicio-color);
+}
+
+.conteudo-sobre{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    background: #273043;
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+.img-carrosel{
+    width: 320px;
+    height: 80%;
+    margin-top: 20px;
+    background: linear-gradient(#1DA4D9, #4898D2) padding-box,
+                linear-gradient(45deg, #1DA4D9, #4898D2) border-box;
+    border: 15px solid transparent;
+    border-radius: 12px;
+}
+
+.container-flechas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.arrow{
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.arrow-dir{
+    transform: rotate(180deg);
+}
+
+.arrow:hover{
+    opacity: 1;
+}
+
+.span{
+    position: absolute;
+    right: 160px;
+    top: 270px;
+    background: linear-gradient(#1DA4D9, #4898D2) padding-box,
+                linear-gradient(45deg, #1DA4D9, #4898D2) border-box;
+    padding: 20px 40px;
+    color: var(--inicio-color);
+    font-weight: bold;
+    border-radius: 10px 0px 0px 0px;
+    font-size: 1.5rem;
+}
+
+.carrosel{
+    display: flex;
+    gap: 20px;
+}
+
+.bolinha{
+    width: 20px;
+    height: 20px;
+    background: var(--azul-color);
+    border-radius: 50%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+@media(max-width: 728px){
+    .span{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    .img-carrosel{
+        width: 1100px;
+        height: 80%;
+        margin-top: 20px;
+        background: linear-gradient(#1DA4D9, #4898D2) padding-box,
+                    linear-gradient(45deg, #1DA4D9, #4898D2) border-box;
+        border: 15px solid transparent;
+        border-radius: 12px;
+    }
+    .span{
+        position: absolute;
+        right: 0px;
+        top: 530px;
+        background: linear-gradient(#1DA4D9, #4898D2) padding-box,
+                    linear-gradient(45deg, #1DA4D9, #4898D2) border-box;
+        padding: 20px 40px;
+        color: var(--inicio-color);
+        font-weight: bold;
+        border-radius: 10px 0px 0px 0px;
+        font-size: 1.5rem;
+    }
+}
+
+

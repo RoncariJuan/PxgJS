@@ -1,0 +1,81 @@
+.corte{
+    height: 22px;
+    width: 100%;
+    background: #11B8E7;
+}
+.corte2{
+    height: 22px;
+    width: 100%;
+    background: #07153E;
+    
+}
+.container-main{
+    background: url(../img/Pokemon/floresta.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.container-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-floresta{
+    width: 50%;
+    margin-top: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-floresta:hover{
+    animation: slide 0.5s;
+}
+
+@keyframes slide{
+    from{
+        transform: translatey(20px);
+    }
+    to{
+        transform: translatey(10px);
+    }
+}
+.jogue{
+    color: var(--inicio-color);
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(var(--azul-color), #267ACA);
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 42px;
+    border: 1px solid var(--azul-color);
+    box-shadow: 1px 10px 10px 0px var(--menu-color);
+    cursor: pointer;
+}
+
+.jogue:hover{
+    font-size:2.2rem;
+    transition: 0.2s;
+}
+
+@media (max-width: 728px){
+    .jogue{
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    .jogue:hover{
+        font-size:1.8rem;
+        transition: 0.2s;
+    }
+    
+    .container-main{
+        background: url(../img/Pokemon/floresta.webp);
+        background-repeat: no-repeat;
+       background-size: cover;
+        background-position: right;
+        height:400px;
+    }
+
+}

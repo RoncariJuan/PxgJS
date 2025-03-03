@@ -1,0 +1,147 @@
+header{
+    background: var(--menu-color);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(var(--menu-color), #24353A);
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    padding: 4px;
+}
+
+ul{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 8px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 30px;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.sessao{
+    color: var(--sessao-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.sessao:hover{
+    font-size: 1.3rem;
+    color: #BA8B01
+}
+
+
+.inicio{
+    color: var(--inicio-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.inicio:hover{
+    font-size: 1.3rem;
+}
+.conta{
+    color: var(--conta-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.conta:hover{
+    font-size: 1.3rem;
+    color: #BFBFBF
+}
+
+.menu{
+    width: 60px;
+    height: 8px;
+    border-radius: 8px;
+    background: var(--inicio-color);
+}
+
+.menu-mobile{
+    display: none;
+    gap: 4px;
+    flex-direction: column;
+}
+
+
+@media(max-width: 768px){
+    .menu-mobile{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+   
+    header{
+        height: 90px;
+    }
+
+    .bandeiras{
+        display: block;
+    }
+
+    .sociais{
+        display: none;
+    }
+
+    .sessao , .inicio , .conta{
+        display: none;
+    }
+        
+    .sessao:hover{
+        font-size: 1.2rem;
+        color: #BA8B01
+    }
+    .conta:hover{
+        font-size: 1.2rem;
+        color: #BFBFBF
+    }
+    .inicio:hover{
+        font-size: 1.2rem;
+    }
+    .active{
+        display: flex;
+        animation: show 0.4s;
+    }
+
+    ul{
+        flex-direction: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        margin-top: 30px;
+    }
+
+    @keyframes show {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    
+}
