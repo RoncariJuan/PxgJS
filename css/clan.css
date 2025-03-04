@@ -64,9 +64,89 @@
     position: relative;
 }
 
-@media(min-width: 320px) and (max-width: 767px){
+@media(min-width: 320px) and (max-width: 480px){
     .grid-clan{
         display: flex;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+    }
+
+    .banner-element{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 40px;
+        left: 60px;
+    }
+    .titulo-element h1{
+        position: absolute;
+        top: 240px;
+        left: 80px;
+        font-size: 3rem;
+    }
+    .img-banner{
+        margin-top: 20px;
+        width: 320px;
+        height: 80%;
+        background: linear-gradient(#1DA4D9, #4898D2) padding-box,
+                    linear-gradient(45deg, #1DA4D9, #4898D2) border-box;
+        border: 15px solid transparent;
+        border-radius: 12px;
+    }
+
+    .banner{
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media(min-width: 481px) and (max-width: 768px){
+    .grid-clan{
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+    }
+
+    .banner-element{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 40px;
+        left: 60px;
+    }
+    .titulo-element h1{
+        position: absolute;
+        top: 240px;
+        left: 80px;
+        font-size: 3rem;
+    }
+    .img-banner{
+        margin-top: 20px;
+        width: 320px;
+        height: 80%;
+        background: linear-gradient(#1DA4D9, #4898D2) padding-box,
+                    linear-gradient(45deg, #1DA4D9, #4898D2) border-box;
+        border: 15px solid transparent;
+        border-radius: 12px;
+    }
+
+    .banner{
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
+    .grid-clan{
+        display: grid;
         margin-top: 30px;
         justify-content: center;
         align-items: center;

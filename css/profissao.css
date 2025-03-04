@@ -41,3 +41,49 @@
         font-size: 4rem;
     }
 }
+
+@media(min-width: 769px) and (max-width: 1024px){
+    .container-profissao{
+        display: flex;
+        gap: 10px;
+    }
+
+    .profissao{
+        width: 250px;
+        height: 300px;
+        margin-top: 30px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .primeiro, .segundo{
+        margin-top: 80px;
+    }
+
+    .escolha{
+        font-size: 4rem;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1200px){
+    .container-profissao{
+        display: flex;
+        gap: 5px;
+    }
+    
+    .profissao{
+        height: 500px;
+        margin-top: 30px;
+        cursor: pointer;
+        width: auto;
+    }
+    
+    .primeiro, .segundo{
+        margin-top: 80px;
+    }
+    
+    
+    .escolha{
+        font-size: 4rem;
+    }
+}
