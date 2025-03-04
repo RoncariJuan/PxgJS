@@ -90,8 +90,8 @@
     }
     .img-banner{
         margin-top: 20px;
-        width: 400px;
-        height: 400px;
+        width: 320px;
+        height: 80%;
         background: linear-gradient(#1DA4D9, #4898D2) padding-box,
                     linear-gradient(45deg, #1DA4D9, #4898D2) border-box;
         border: 15px solid transparent;
